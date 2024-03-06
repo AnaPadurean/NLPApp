@@ -2,38 +2,76 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/password"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mock_up"
+    android:background="@drawable/bg"
     tools:context=".loginPage">
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress2"
-        android:layout_width="374dp"
-        android:layout_height="44dp"
-        android:backgroundTint="#1A237E"
-        android:drawableStart="@android:drawable/ic_dialog_email"
-        android:drawablePadding="10dp"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        android:textColorHint="#1A237E"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="118dp"
-        tools:layout_editor_absoluteY="412dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot password?"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="364dp"
+        tools:layout_editor_absoluteY="556dp"></TextView>
 
     <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="374dp"
-        android:layout_height="52dp"
-        android:backgroundTint="#1A237E"
-        android:drawableStart="@android:drawable/ic_lock_idle_lock"
-        android:drawablePadding="10dp"
+        android:id="@+id/emailLogin"
+        android:layout_width="401dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="411dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="493dp"
         android:ems="10"
-        android:hint="Password"
         android:inputType="textEmailAddress"
-        android:textColorHint="#1A237E"
-        tools:layout_editor_absoluteX="118dp"
-        tools:layout_editor_absoluteY="456dp"
-        tools:ignore="MissingConstraints,TextFields" />
+        android:text="Email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordLogin"
+        android:layout_width="403dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="485dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="416dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Password"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/crateNewAccount"
+        android:layout_width="417dp"
+        android:layout_height="57dp"
+        android:background="#0e1935"
+        android:text="Create New Account"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="788dp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="420dp"
+        android:layout_height="58dp"
+        android:background="#0e1935"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="859dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
