@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">ArticuLearn</string>
     <string name="welcomeText">Welcome to ArticuLearn!</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="Email">TextView</string>
+    <string name="Password" />
 </resources>
