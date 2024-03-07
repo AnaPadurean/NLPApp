@@ -59,66 +59,53 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:id="@+id/textInputLayout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        app:passwordToggleEnabled="true"-->
+    <!--        tools:layout_editor_absoluteX="0dp"-->
+    <!--        tools:layout_editor_absoluteY="0dp">-->
+
     <EditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="333dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="39dp"
-        android:layout_marginTop="243dp"
-        android:layout_marginBottom="433dp"
+        android:layout_width="365dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="23dp"
         android:ems="10"
-        android:inputType="textEmailAddress"
         android:hint="Email"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="333dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="315dp"
-        android:layout_marginEnd="38dp"
-        android:layout_marginBottom="361dp"
-        android:ems="10"
-        android:inputType="textVisiblePassword"
-        android:hint="Password"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-
-        tools:ignore="DuplicateIds,MissingConstraints" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         android:layout_width="match_parent"
-
-        android:layout_height="match_parent"
-        app:passwordToggleEnabled="true"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:layout_height="wrap_content"
+        android:textColorHint="#B9B8B8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextEmailAddress"
+        app:passwordToggleEnabled="true">
 
         <EditText
-            android:id="@+id/editText"
-            android:layout_width="333dp"
-            android:layout_height="55dp"
-
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="11dp"
-            android:layout_marginBottom="958dp"
-            android:ems="10"
+            android:id="@+id/register_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:backgroundTint="#B9B8B8"
             android:hint="Password"
             android:inputType="textPassword"
             android:padding="16dp"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

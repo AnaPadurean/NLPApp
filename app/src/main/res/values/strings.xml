@@ -4,4 +4,5 @@
     <string name="forgot_password">Forgot password?</string>
     <string name="Email">TextView</string>
     <string name="Password" />
+    <string name="password">Password</string>
 </resources>
